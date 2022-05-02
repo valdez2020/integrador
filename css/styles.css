@@ -1,0 +1,380 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#container{
+	width: 100%;
+	height: 100vh;
+}
+
+/* Barra de navegación
+
+**Se incluyen clases y id del footer ya que comparten propiedades
+y así evitar el duplicado de código aunque el footer tenga su 
+propia sección de diseño.
+*/
+#header, #footer{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	padding: 0 4%;
+	background-color: #353a40;
+
+}
+
+#header{
+	position: absolute;
+	z-index: 2;
+}
+
+#header__logo{
+display: flex;
+}
+
+div h1{
+	margin-bottom: 0;
+	font-size: 1.2em;
+	padding-top: 10%;
+	color: #fff;
+}
+
+
+.header__logo__img{
+	background-image: url(../img/codoacodo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 69px;
+
+}
+
+.header__navBar .header__navBar__list{
+	margin: 0;
+}
+.header__navBar__list, .footer__list{
+	list-style: none;
+}
+
+.header__navBar__list li:first-child a{
+	color: #fff;
+
+}
+
+.header__navBar__list li:last-child a{
+	color: #28a443;
+}
+
+.header__navBar__item, .footer__list__item{
+	display: inline-block;
+	padding: 6px;
+	font-size: 1.1em;
+}
+
+.header__navBar__item a, .footer__list__item a{
+	text-decoration: none;
+	color: #68798f;
+	transition: color .3s ;
+}
+
+.header__navBar__item a:hover{
+	color: #102;
+}
+.header__navBar__list li:first-child a:hover{
+	color: #999;
+
+}
+
+.header__navBar__list li:last-child a:hover{
+	color: greenyellow;
+}
+
+.navBar__mobile{
+	background-color: #353a40;
+}
+/*menu mobile*/
+
+
+
+
+/*carrusel*/
+.carousel__container{
+	height: 100vh;
+}
+
+.carousel-1, .carousel-2, .carousel-3,.screen-transparent{
+	width: 100%;
+	height: 100vh;
+}
+
+.screen-transparent{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+position: absolute;
+height: 100vh;
+top: 0;
+color: #fff;
+}
+
+#carousel div img{
+ filter: brightness(50%);
+}
+
+.carousel-text{
+	text-align: right;
+	width: 50%;
+}
+
+.carousel-text__content{
+	width: 78%;
+	margin-top: 34%;
+    margin-left: 3%;
+    font-size: 1em;
+}
+
+.carousel-text__buttons{
+margin-top: 20px;
+padding: 5px;
+}
+.carousel-text__buttons--1, .carousel-text__buttons--2{
+	color: #fff;
+	margin-right: 5px;
+	border-radius: 6px;
+	box-shadow: none;
+    padding: 9px 20px;
+}
+
+.carousel-text__buttons--1{
+	margin-right: 10px;
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+.carousel-text__buttons--2{
+	background-color: #29a744;
+	padding: 11px 22px;
+	border: none;
+	margin: 0;
+}
+
+
+
+/*Cards*/
+
+
+.cards__title, .form__title{
+    width: 250px;
+	margin: 0 auto;
+	padding-top: .8em;
+	font-size: .8em;
+	font-weight: 400;
+	text-align: center;
+    line-height: 29px;
+}
+
+.cards__title strong, .form__title strong{
+	font-weight: 600;
+    font-size: 2.4em;
+}
+
+#cards h3{
+	font-size: 1.3em;
+}
+.cards__pattern{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 2.5em;
+	margin-top: .4em;
+}
+
+.card-text{
+	font-size: .8em;
+}
+
+.card-img-top {
+    height: 280px;
+}
+
+.card{
+	margin: 0 .9em;
+	width: 19rem;
+}
+.etiqueta{
+	text-decoration: none;
+	font-weight: 700;
+	font-size: .8em;
+	padding: 1px 4px;
+	border-radius: 5px;
+}
+
+
+.etiqueta-javascript{
+	background-color:#fec106 ;
+	color: #000;
+}
+
+.etiqueta-react, .etiqueta-negocios, .etiqueta-starups{
+	color: #fff;
+}
+
+.etiqueta-react{
+background-color:#17a1b9 ;
+}
+
+.etiqueta-negocios{
+background-color:#6b757c;
+}
+
+.etiqueta-starups{
+background-color: #da3445;
+}
+
+.card div .etiqueta-javascript:hover{
+	color:#fff ;
+}
+
+.card div .etiqueta-react:hover, .card div .etiqueta-negocios:hover, .card div .etiqueta-starups:hover{
+	color:#000 ;
+}
+
+
+/*Pantalla dividida*/
+
+
+
+.screen__divided{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 370px;
+	color: #fff;
+}
+
+.screen__divided__left{
+	background-image: url(../img/honolulu.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 47%;
+	border-right: 1px  solid #fff;;
+
+}
+
+.screen__divided__right{
+	width: 53%;
+	padding: 20px;
+	background-color: #353a40;
+}
+
+.screen__divided__right p{
+	font-size: 13px;
+}
+
+.screen__divided__right__button{
+	background-color: transparent;
+	padding: 7px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+/*Formulario*/
+
+.form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    width: 50%;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+
+.form__title{
+	text-transform: uppercase;
+}
+
+.form__text{
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.form__text u{
+text-decoration: none;
+border-bottom: 1px dashed #000;
+}
+
+.form__content{
+	margin-top: 10px;
+}
+.form__content__input{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+.form__content__input div{
+    width: 48%
+}
+
+.form__content .mb_3 textarea{
+margin-bottom: 0;
+}
+.form__content__textarea label, .form__content__input div label{
+	display: none;
+}
+
+.form__content__textarea textarea::placeholder{
+	font-size: 1.3em;
+}
+
+.form__footer{
+	color:#666;
+	margin-top: -9px;
+}
+
+.form__button{
+	height: 46px;
+	font-size: 1.4em;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-color: #96cb3b;
+}
+
+/*footer*/
+
+#footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1d5271;
+}
+.footer__list{
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.footer__list__item{
+	width: 13%;
+	text-align: center
+}
+
+.footer__list__item a{
+	color: #fff;
+	transition: color .3s ;
+}
+
+.header__navBar__item a:hover{
+	color: #515;
+
+}
