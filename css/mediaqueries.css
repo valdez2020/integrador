@@ -242,6 +242,18 @@
 
 @media only screen and (max-width: 705px){
 
+        .carousel-1 {
+        background-image: url(../img/hawaii.jpg);
+    }
+
+        .carousel-2 {
+        background-image: url(../img/hawaii2.jpg);
+    }
+
+        .carousel-3 {
+        background-image: url(../img/hawaii3.jpg);
+    }
+
         #header {
              height: 155px;
         }
