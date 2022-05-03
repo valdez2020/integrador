@@ -1,9 +1,6 @@
 
 @media only screen and (max-width: 1198px) {
 
-        .carousel__container{
-        height: 96vh;
-        }
 
         .carousel-text {
             text-align: right;
@@ -14,24 +11,12 @@
             margin-left: 6%;
         }
 
-        .screen-transparent {
-            height: 90vh;
-        }
-
 }
 
 @media only screen and (max-width: 1164px) {
 
         .form{
             width: 65%;
-        }
-
-}
-
-@media only screen and (max-width: 1136px){
-
-        .carousel__container{
-            height: 90vh;
         }
 
 }
@@ -48,8 +33,6 @@
 
 }
 
-
-
 @media only screen and (max-width: 1046px) {
         .header__navBar__item, .footer__list__item {
             padding: 7px;
@@ -58,15 +41,8 @@
         .carousel-text__content {
             margin-top: 18%;
         }
-       .carousel__container{
-            height: 100vh;
-        }
 
 }
-
-
-@media only screen and (max)
-
 
 @media only screen and (max-width: 993px) {
 
@@ -76,9 +52,6 @@
         }
         div h1 {
             font-size: 1em;
-        }
-       .carousel__container{
-            height: 80vh;
         }
         .carousel-text {
             width: 67%;
@@ -94,20 +67,16 @@
         .screen__divided__right p {
             font-size: 11px;
         }
-
-
-}
-
-
-@media only screen and (max-width: 993px) {
-
-        ul{
+                ul{
             padding: 0;
         }
         .cards__pattern{
             margin: 1.5em;
         }
+
+
 }
+
 
 
 @media only screen and (max-width:  959px){
@@ -161,29 +130,23 @@
 }
 
 @media only screen and (max-width: 870px){
-      #header {
-         position: relative;
-    }
         .header__navBar{
             width: 100%;
             text-align: center;
         }
 
         .screen-transparent {
-            height: 71vh;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
         }
         .carousel-text{
-            width: 84%;
-            height: 280px;
+            width: 100%;
+            height: 120px;
             display: flex;
             text-align: center;
             margin-left: 11%;
         }
-        .carousel__container {
-            height: 70vh;
-        }
+
         .carousel-text__content{
             text-align: justify;
         }
@@ -195,6 +158,7 @@
         }
         .carousel-text__buttons {
             padding: 0;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
         }
@@ -211,10 +175,6 @@
 
 @media only screen and (max-width: 831px){
 
-        .carousel__container {
-            height: 66vh;
-        }
-
         .form {
             width: 80%;
         }
@@ -222,14 +182,6 @@
 
 @media only screen and (max-width: 762px){
 
-
-        .carousel-text {
-            width: 100%;
-            height: 288px;
-        }
-        .carousel-text__buttons {
-            margin-top: 0px;
-        }
         .carousel-text__buttons--1{
             font-size: 1em;
             padding: 10px  35px;
@@ -292,7 +244,6 @@
 
         #header {
              height: 155px;
-             position: relative;
         }
         .header__logo__img {
             width: 105px;
@@ -318,30 +269,12 @@
             font-size: .8em;
             padding: 10px;
         }
-        .carousel__container {
-            height: 77vh;
-        }
-        .screen-transparent {
-            height: 100vh;
-        }
-}
-
-@media only screen and (max-width:  671px){
-
-        .carousel__container {
-            height: 71vh;
-        }
-        .carousel-text {
-            height: 352px;
-        }
 
 }
+
 
 @media only screen and (max-width:  639px){
 
-        .carousel-text {
-            height: 352px;
-        }
         .screen__divided {
             height: 590px;
         }
@@ -366,15 +299,10 @@
         div h1 {
             margin-top: -15px;
         }
-        .screen-transparent {
-            height: 88vh;
-        }
-        .carousel-text {
-            height: 322px;
-        }
-        .carousel__container {
-            height: 63vh;
-        }
+        .card-text {
+            font-size: 1.1em;
+        }   
+
         #footer{
             height: 320px;
         }
@@ -392,36 +320,25 @@
 }
  
 @media only screen and (max-width: 562px){
-        .carousel__container {
-            height: 59vh;
-        }
+
         .carousel-text__buttons--1 {
             padding: 10px 15px;
             }
         .carousel-text__buttons--2 {
             padding: 10px 26px;
         }
-        .screen-transparent {
-            height: 77vh;
-        }
-        .carousel-text__content {
-            margin-top: 17%;
-        }
 }
 
 @media only screen and (max-width: 487px){
-        .carousel__container {
-            height: 51vh;
-        }
         .carousel-text__content p{
             font-size: .8em;
         }
+        .etiqueta {
+            font-size: 1em;
+         }
 }
 
 @media only screen and (max-width: 479px){
-        .carousel__container {
-            height: 51vh;
-        }
         .carousel-text__content p{
             font-size: .8em;
         }
@@ -443,6 +360,12 @@
         }
         .screen__divided__right p {
             font-size: 12px;
+        }
+        .cards__pattern div{
+            margin: 0 20px 25px 20px;
+        }
+        .cards__pattern .card {
+            width: 320px;
         }
 
 }
@@ -475,8 +398,55 @@
             font-size: 1em;
             padding: 5px 3px;
         }
-        .carousel__container {
-            height: 44vh;
+}
+
+@media only screen and (max-width:  385px){
+            #header{
+            height: 163px;           
+        }
+    
+}
+
+@media only screen and (max-width:  364px){
+
+        .cards__pattern .card {
+            width: 300px;
+        }
+        #header{
+            justify-content: flex-start;
+        }
+        .header__navBar .header__navBar__list {
+            margin-top: 10px;
+        }
+        .screen__divided__right {
+            height: 315px;
+        }
+        .screen__divided__right {
+            padding: 10px;
         }
 }
 
+@media only screen and (max-width:  330px){
+        #header{
+            height: 200px;           
+        }
+        .form {
+    width: 98%;
+}
+}
+
+@media only screen and (max-width: 300px){
+        .cards__pattern .card {
+            width: 260px;
+        }
+}
+
+@media only screen and (max-width:  290px){
+        .screen__divided {
+            height: 628px;
+        }
+        .screen__divided__right {
+            height: 330px;
+        }
+
+}
