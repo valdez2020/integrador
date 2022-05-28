@@ -1,0 +1,95 @@
+div h1{
+	margin-bottom: 0;
+	font-size: 1.5em;
+	padding-top: 10%;
+	color: #fff;
+}
+
+.header__navBar__list li:nth-child(4) a{
+	color: #fff;
+}
+
+.header__navBar__list li:nth-child(4) a:hover{
+	color: #999;
+}
+.header__navBar__list li:first-child a{
+	color: #68798f;
+
+}
+.header__navBar__list li:first-child a:hover{
+	color: #102;
+
+}
+
+#header{
+	position: relative;
+}
+#cards{
+	margin-top: 40px;
+}
+
+.card {
+    margin: 2px;
+}
+
+.card:nth-child(1){
+border:2px solid #459af5;
+}
+.card:nth-child(2){
+border:2px solid #62b8c6;	
+}
+.card:nth-child(3){
+border:2px solid #ffd864;	
+}
+
+div .card-body{
+	text-align: center;
+}
+div .card-body h3{
+margin-top: .8em;
+font-size: 1.7em;
+}
+div .card-text {
+    font-size: 1.3em;
+}
+div .card-body p{
+margin-bottom: 0;
+margin: 1em;
+}
+
+div .card-body b{
+	font-size: 1.3em;
+}
+div .card-body p:last-child{
+color: #767676;
+}
+
+.cards__pattern{
+	margin: 0;
+}
+.form__title {
+    width: 100%;
+}
+
+#totalAPagar{
+	background-color: #cce5ff;
+	color: #0040a5;
+	padding: 5px;
+	margin: 15px 0 40px 0;
+	border-radius: 5px;
+}
+
+#totalAPagar p{
+	margin: 10px;
+}
+
+#buttons__tickets{
+	display: flex;
+	justify-content: space-between;
+}
+
+#buttons__tickets input[type=submit]{
+	width: 49%;
+    height: 41px;
+    font-size: 1.2em;
+}
