@@ -174,6 +174,15 @@ padding: 5px;
 	border-radius: 6px;
 	box-shadow: none;
     padding: 9px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel-text__buttons--1:hover{
+color: #68798f;
+} 
+.carousel-text__buttons--2:hover{
+color: #000;
 }
 
 .carousel-text__buttons--1{

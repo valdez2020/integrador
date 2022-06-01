@@ -25,7 +25,7 @@
 				<nav class="header__navBar">
 					<ul class="header__navBar__list">
 						<li class="header__navBar__item">
-							<a href="#">
+							<a href="index.html">
 								La conferencia
 							</a>
 						</li>
@@ -45,7 +45,7 @@
 							</a>
 						</li>
 						<li class="header__navBar__item">
-							<a href="#">
+							<a href="tickets.html" target="_blank">
 								Comprar tickets
 							</a>
 						</li>
@@ -108,28 +108,29 @@
 			<form class="form__content container">
 				<div class="form__tickets row">
 					<div class="col-6 pe-1">
-						  <label for="exampleFormControlInput1" class="form-label"></label>
-						  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+						  <label for="tickets__name" class="form-label"></label>
+						  <input type="text" class="form-control" id="tickets__name" placeholder="Nombre">
 					</div>
 					<div class="col-6 ps-1">
-						  <label for="exampleFormControlInput2" class="form-label"></label>
-						  <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+						  <label for="tickets__lastName" class="form-label"></label>
+						  <input type="text" class="form-control" id="tickets__lastName" placeholder="Apellido">
 					</div>
 					<div class="col-12 mb-3">
-						  <label for="exampleFormControlInput2" class="form-label"></label>
-						  <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Correo">
+						  <label for="tickets__email" class="form-label"></label>
+						  <input type="email" class="form-control" id="tickets__email" placeholder="Correo">
 					</div>
 					<div class="col-6 mb-3 ps-1">
-						  <label for="exampleFormControlInput2" class="form-label">Cantidad</label>
-						  <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="cantidad">
+						  <label for="tickets__amount" class="form-label">Cantidad</label>
+						  <input type="text" class="form-control" id="tickets__amount" placeholder="cantidad">
 					</div>
 					<div class="col-6 mb-3 ps-1">
-						  <label for="exampleFormControlInput2" class="form-label">Categoría</label>
-							<select class="form-select" id="form__content__input--categorias">
-							<option value="0">Sin categoría</option>
-								<option value="1">Estudiante</option>
-							  	  	<option value="2">Trainee</option>
-							  	  	  	<option value="3">Junior</option>
+						  <label for="tickets__category" class="form-label">Categoría</label>
+							<select class="form-select" id="tickets__category">
+							<option value="4" selected="true" disabled="disabled">---Seleccione una categoría---</option>
+								<option value="0">Sin categoría</option>
+									<option value="1">Estudiante</option>
+							  	  		<option value="2">Trainee</option>
+							  	  	  		<option value="3">Junior</option>
 							  	  	  	  			
 							</select>			
 					</div>
@@ -138,12 +139,12 @@
 			</form>
 			
 			<div id="totalAPagar">
-				<p>Total a pagar: $</p>
+				<p>Total a pagar: $ <b id="monto"></b></p>
 			</div>
 
 			<div id="buttons__tickets">
-			<input class="form__button" type="submit" name="enviar" value="Borrar">
-			<input class="form__button" type="submit" name="enviar" value="Resumen">
+			<input class="form__button" type="submit" name="borrar" value="Borrar" id="clean__button">
+			<input class="form__button" type="submit" name="resumen" value="Resumen" id="resumen__button">
 			</div>
 		</section>
 			<!--fin formulario-->
@@ -197,5 +198,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/validacion_valor_tickets.js"></script>
 </body>
 </html>
